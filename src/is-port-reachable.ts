@@ -5,7 +5,7 @@ export interface IsPortReachableOptions {
   timeout?: number;
 }
 
-export const isPortReachable = (port: number, options: IsPortReachableOptions) => {
+export const isPortReachable = (port: number, options: IsPortReachableOptions): Promise<boolean> => {
   options = Object.assign({ timeout: 1000 }, options);
 
   return new Promise((resolve => {
