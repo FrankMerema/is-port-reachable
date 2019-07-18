@@ -1,0 +1,27 @@
+{
+	"name": "@frankmerema/is-port-reachable",
+	"version": "0.0.1",
+	"description": "Check if a local or remote port is reachable",
+	"repository": {
+		"type": "git",
+		"url": "git+https@github.com:FrankMerema/is-port-reachable.git"
+	},
+	"author": "Frank Merema",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/FrankMerema/is-port-reachable/issues"
+	},
+	"homepage": "https://github.com/FrankMerema/is-port-reachable#readme",
+	"scripts": {
+		"test": "jest",
+		"lint": "tslint -p tsconfig.json -c tslint.json"
+	},
+	"devDependencies": {
+		"@types/jest": "^24.0.15",
+		"@types/node": "^12.6.8",
+		"jest": "^24.8.0",
+		"ts-jest": "^24.0.2",
+		"tslint": "^5.18.0",
+		"typescript": "^3.5.3"
+	}
+}
