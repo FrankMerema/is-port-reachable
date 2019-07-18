@@ -32,5 +32,7 @@ jobs:
       - run: yarn lint
       - run: yarn test
 
+      - store_test_results:
+          path: coverage
       - store_artifacts:
           path: coverage
