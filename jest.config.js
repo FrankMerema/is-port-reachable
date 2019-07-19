@@ -11,6 +11,6 @@ module.exports = {
   coverageDirectory: './coverage/jest/lcov',
   collectCoverage: true,
   collectCoverageFrom: [
-    '**/*.ts'
+    'src/**/*.ts'
   ]
 };

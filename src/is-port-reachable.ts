@@ -5,15 +5,15 @@ export interface IsPortReachableOptions {
   timeout?: number;
 }
 
-export const isPortReachable = (port: number, options: IsPortReachableOptions): Promise<boolean> => {
+export const isPortReachable = (port: number, options: IsPortReachableOptions): Promise<boolean | Error> => {
   options = Object.assign({ timeout: 1000 }, options);
 
-  return new Promise((resolve => {
+  return new Promise((resolve, reject) => {
     const socket = new net.Socket();
 
-    const onError = () => {
+    const onError = (err: Error) => {
       socket.destroy();
-      resolve(false);
+      reject({ error: err.message });
     };
 
     socket.setTimeout(options.timeout);
@@ -24,5 +24,5 @@ export const isPortReachable = (port: number, options: IsPortReachableOptions): 
       socket.end();
       resolve(true);
     });
-  }));
+  });
 };
