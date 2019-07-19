@@ -20,7 +20,9 @@ const isPortReachable = require('is-port-reachable');
 
 (async () => {
 	console.log(await isPortReachable(80, {host: 'google.com'}));
-	//=> true
+	//=> resolves -> true
+	console.log(await isPortReachable(0, {host: ''}));
+	//=> rejects -> {error: '<message>'}
 })();
 ```
 
@@ -29,26 +31,27 @@ const isPortReachable = require('is-port-reachable');
 
 ### isPortReachable(port, [options])
 
-Returns `Promise<boolean>`.
+Returns `Promise<boolean | Error>`.
 
-#### port
+### port
 
 Type: `number`
 
-#### options
+### options
 
-Type: `Object`
+Type: `IsPortReachableOptions`
 
+#### IsPortReachableOptions
 ##### host
 
-Type: `string`<br>
-Default: `localhost`
+Type: `string`\
+Default: `''` (which results in `localhost`) 
 
 Can be a domain or an IP.
 
-##### timeout
+##### timeout (Optional)
 
-Type: `number`<br>
+Type: `number`\
 Default: `1000`
 
 Milliseconds to wait before giving up.
