@@ -1,33 +1,38 @@
 {
-	"name": "@frankmerema/is-port-reachable",
-	"version": "0.0.4",
-	"description": "Check if a local or remote port is reachable",
-	"main": "dist/is-port-reachable.js",
-	"types": "dist/is-port-reachable.d.ts",
-	"repository": {
-		"type": "git",
-		"url": "git+https@github.com:FrankMerema/is-port-reachable.git"
-	},
-	"author": "Frank Merema",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/FrankMerema/is-port-reachable/issues"
-	},
-	"homepage": "https://github.com/FrankMerema/is-port-reachable#readme",
-	"scripts": {
-		"build": "yarn clean && tsc",
-		"clean": "rimraf dist",
-		"test": "rimraf coverage && jest",
-		"lint": "tslint -p tsconfig.json -c tslint.json"
-	},
-	"devDependencies": {
-		"@types/jest": "24.0.15",
-		"@types/node": "12.6.8",
-		"jest": "24.8.0",
-		"jest-junit": "6.4.0",
-		"rimraf": "2.6.3",
-		"ts-jest": "24.0.2",
-		"tslint": "5.18.0",
-		"typescript": "3.5.3"
-	}
+  "name": "@frankmerema/is-port-reachable",
+  "version": "0.0.4",
+  "description": "Check if a local or remote port is reachable",
+  "main": "dist/is-port-reachable.js",
+  "types": "dist/is-port-reachable.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https@github.com:FrankMerema/is-port-reachable.git"
+  },
+  "author": "Frank Merema",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FrankMerema/is-port-reachable/issues"
+  },
+  "homepage": "https://github.com/FrankMerema/is-port-reachable#readme",
+  "files": [
+    "/dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "yarn clean && tsc",
+    "clean": "rimraf dist",
+    "test": "rimraf coverage && jest",
+    "lint": "tslint -p tsconfig.json -c tslint.json"
+  },
+  "devDependencies": {
+    "@types/jest": "24.0.15",
+    "@types/node": "12.6.8",
+    "jest": "24.8.0",
+    "jest-junit": "6.4.0",
+    "rimraf": "2.6.3",
+    "ts-jest": "24.0.2",
+    "tslint": "5.18.0",
+    "typescript": "3.5.3"
+  }
 }
