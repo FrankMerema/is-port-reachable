@@ -1,6 +1,6 @@
 {
   "name": "@frankmerema/is-port-reachable",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Check if a local or remote port is reachable",
   "main": "dist/is-port-reachable.js",
   "types": "dist/is-port-reachable.d.ts",
@@ -28,7 +28,7 @@
     "@types/jest": "24.0.15",
     "@types/node": "12.6.8",
     "jest": "24.8.0",
-    "jest-junit": "6.4.0",
+    "jest-junit": "7.0.0",
     "rimraf": "2.6.3",
     "ts-jest": "24.0.2",
     "tslint": "5.18.0",
