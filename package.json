@@ -20,8 +20,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "yarn clean && tsc",
-    "clean": "rimraf dist",
+    "build": "rimraf dist && tsc",
     "test": "rimraf coverage && jest",
     "lint": "tslint -p tsconfig.json -c tslint.json"
   },
