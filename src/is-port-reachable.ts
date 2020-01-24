@@ -14,7 +14,7 @@ export const isPortReachable = (
   return new Promise((resolve, reject) => {
     const socket = new net.Socket();
 
-    const onError = (err: Error) => {
+    const onError = (err: Error): void => {
       socket.destroy();
       reject({ error: err.message });
     };

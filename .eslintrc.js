@@ -6,7 +6,7 @@ module.exports = {
   },
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: 'tsconfig.json',
+    project: ['tsconfig.json', 'tsconfig-test.json'],
     sourceType: 'module'
   },
   plugins: ['@typescript-eslint', 'prefer-arrow'],
@@ -40,7 +40,7 @@ module.exports = {
     '@typescript-eslint/prefer-for-of': 'error',
     '@typescript-eslint/prefer-function-type': 'error',
     '@typescript-eslint/prefer-namespace-keyword': 'error',
-    '@typescript-eslint/quotes': ['error', 'single'],
+    '@typescript-eslint/quotes': ['error', 'single', { avoidEscape: true }],
     '@typescript-eslint/triple-slash-reference': 'error',
     '@typescript-eslint/unified-signatures': 'error',
     'arrow-parens': ['off', 'as-needed'],
