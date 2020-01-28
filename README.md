@@ -1,5 +1,5 @@
 # is-port-reachable 
-[![Github](https://github.com/FrankMerema/is-port-reachable/workflows/Build%20and%20release/badge.svg)](https://circleci.com/gh/FrankMerema/is-port-reachable/tree/master) [![jest](https://jestjs.io/img/jest-badge.svg)](https://github.com/facebook/jest)
+[![Github](https://github.com/FrankMerema/is-port-reachable/workflows/Release/badge.svg)](https://circleci.com/gh/FrankMerema/is-port-reachable/tree/master) [![jest](https://jestjs.io/img/jest-badge.svg)](https://github.com/facebook/jest)
 
 Check if a local or remote port is reachable
 
