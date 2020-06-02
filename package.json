@@ -1,6 +1,6 @@
 {
   "name": "@frankmerema/is-port-reachable",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Check if a local or remote port is reachable",
   "main": "dist/is-port-reachable.js",
   "types": "dist/is-port-reachable.d.ts",
