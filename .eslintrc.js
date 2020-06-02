@@ -10,6 +10,7 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: ['@typescript-eslint', 'prefer-arrow'],
+  ignorePatterns: ['.eslintrc.js'],
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
