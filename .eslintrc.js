@@ -20,7 +20,10 @@ module.exports = {
     '@typescript-eslint/adjacent-overload-signatures': 'error',
     '@typescript-eslint/array-type': 'error',
     '@typescript-eslint/ban-types': 'error',
-    '@typescript-eslint/class-name-casing': 'error',
+    '@typescript-eslint/naming-convention': [
+      'error',
+      { selector: 'class', format: ['PascalCase'] }
+    ],
     '@typescript-eslint/consistent-type-assertions': 'error',
     '@typescript-eslint/explicit-member-accessibility': [
       'off',
