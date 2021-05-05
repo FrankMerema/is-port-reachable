@@ -6,11 +6,23 @@ registries:
     token: "${{secrets.NPM_REGISTRY_NPM_PKG_GITHUB_COM_TOKEN}}"
 
 updates:
-- package-ecosystem: npm
-  directory: "/"
-  schedule:
-    interval: daily
-    time: "04:00"
-  open-pull-requests-limit: 10
-  registries:
-  - npm-registry-npm-pkg-github-com
+  - package-ecosystem: 'npm'
+    directory: '/'
+    registries: '*'
+    schedule:
+      interval: 'daily'
+    labels:
+      - 'dependencies'
+    commit-message:
+      prefix: 'chore'
+      include: 'scope'
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    registries: '*'
+    schedule:
+      interval: 'daily'
+    labels:
+      - 'dependencies'
+    commit-message:
+      prefix: 'chore'
+      include: 'scope'
