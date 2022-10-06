@@ -5,7 +5,7 @@ jobs:
     name: install
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3.1.0
       - uses: actions/cache@v2
         with:
           path: node_modules
@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: install
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3.1.0
       - uses: actions/cache@v2
         with:
           path: node_modules
@@ -43,7 +43,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: install
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v3.1.0
       - uses: actions/cache@v1
         with:
           path: node_modules
@@ -59,7 +59,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: install
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3.1.0
       - uses: actions/cache@v2
         with:
           path: node_modules
